@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>WelGeen Design Board</title>
+		<link rel="stylesheet" href="styles.css">
+
+	</head>
+	<body>
+		<div class="container">
+			<div id="title">WelGeen Design Board</div>
+			<iframe id="imageFrame" src="template.html"></iframe>
+			<div class="editor-container">
+				
+				<div class="select" >Select</div> 
+					
+				<form id="formContainer" onchange="javascript: selectLayer();">
+					
+					<input type="radio" name="layer" value=0 >
+					<input type="radio" name="layer" value=1 >
+					<input type="radio" name="layer" value=2 >
+				</form>
+				<br>				
+				<div class="grid-container">
+					<div id="pluBtn" >Add layer</div>
+					<div id="minBtn" >Remove layer</div>
+					<div id="savBtn" >Save</div>
+					<div id="opnBtn" >Open</div>
+					<div id="gifBtn" >GIF</div>
+					<div id="imgBtn" >Image</div>
+					<div id="filBtn" >Filter</div>
+					<div id="bleBtn" >Blend</div>
+
+					<div id="XBtn" >Animate X</div>
+					<div id="YBtn" >Animate Y</div>
+					<div id="scaBtn" >Animate Scale</div>
+					<div id="rotBtn" >Animate Rotate</div>
+
+					<div id="topBtn" >Top</div>
+					<div id="lefBtn" >Left</div>
+					<div id="whBtn" >Width / Height</div>
+					<div id="degBtn" >Rotate +/- 90°</div>
+					<div id="rncBtn" >Back ground color</div>
+					<div id="rbcBtn" >Body color</div>
+					<div id="rntBtn" >Random Text</div>
+					<div id="antBtn" >Add Text</div>
+					<div id="rfcBtn" >Font Color</div>
+					<div id="rfsBtn" >Font Size</div>
+					<div id="wgcBtn" >WelGeen Color</div>
+				</div>
+			 
+			
+			</div>
+		</div>
+		<div id="formOverlay" style="display: none;">
+			<form>
+				<textarea placeholder="..."></textarea>
+				<button type="button" id="formSubmitBtn">Verstuur</button>
+			</form>
+		</div>
+		
+		<script src="beeldbank.js"></script>
+		<script src="animations.js"></script>
+		<script src="script.js"></script>
+		
+ </body>
+</html>

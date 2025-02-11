@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7x5 CSS Grid met Content</title>
+    <style>
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr); /* 7 kolommen van gelijke breedte */
+            grid-template-rows: repeat(5, 1fr); /* 5 rijen van gelijke hoogte */
+            width: 100vw; /* 100% van de viewport breedte */
+            height: calc(100vw / 7 * 5); /* Hoogte afhankelijk van de breedte van de kolommen */
+        }
+
+        /* Grid Items */
+        .grid-container > div {
+            border: 1px solid #ccc; /* Optionele border voor zichtbaarheid */
+            display: flex;
+            justify-content: center; /* Centreer tekst horizontaal */
+            align-items: center; /* Centreer tekst verticaal */
+            font-size: calc(1vw * 0.8); /* Tekst past zich aan de breedte van het scherm aan */
+            text-align: center;
+        }
+
+        /* Titels */
+        .upper {
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Specifieke stijling voor knoppen (nu als divs) */
+        .grid-container > .button {
+            background-color: #f0f0f0;
+            border: 1px solid #999;
+            cursor: pointer;
+        }
+
+        .grid-container > .button:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- File Section -->
+        <div class="upper">File</div>
+        <div id="savBtn" class="button">Save</div>
+        <div id="opnBtn" class="button">Open</div>
+        <div id="gifBtn" class="button">GIF</div>
+        <div id="imgBtn" class="button">Image</div>
+        <div id="filBtn" class="button">Filter</div>
+        <div id="bleBtn" class="button">Blend</div>
+
+        <!-- Animation Section -->
+        <div class="upper">Animation</div>
+        <div id="XBtn" class="button">X</div>
+        <div id="YBtn" class="button">Y</div>
+        <div id="scaBtn" class="button">Scale</div>
+        <div id="rotBtn" class="button">Rotate</div>
+        
+        <!-- Position Section -->
+        <div class="upper">Position</div>
+        <div id="topBtn" class="button">Top</div>
+        <div id="lefBtn" class="button">Left</div>
+        <div id="whBtn" class="button">Dim</div>
+        <div id="degBtn" class="button">90°</div>
+    </div>
+</body>
+</html>
