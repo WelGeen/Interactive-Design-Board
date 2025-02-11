@@ -6,7 +6,7 @@ This project focuses on designing an interactive design board that generates cre
 - Teach students how to write short scripts to control visuals, filters, and animations.
 
 ### Practical Details
-- A mobile prototype of the "design board" is available as inspiration: [CSS Poster Prototype](https://welgeen.nl/css-poster/mob)
+- A mobile prototype of the "design board" is available as inspiration: [CSS Poster Prototype](https://welgeen.nl/css-poster/)
 - Requirements: A physical design board and project documentation.
 
 ## Assignments
